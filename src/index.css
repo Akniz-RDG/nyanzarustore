@@ -1,0 +1,13 @@
+/* Reset y base */
+*{ box-sizing: border-box; }
+html, body, #root{ height: 100%; }
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #fefce8;
+  background: linear-gradient(180deg,#022c22,#064e3b,#065f46);
+  line-height: 1.45;
+}
+a{ color: inherit; text-decoration: none; }
+ul{ margin: 0; padding: 0; list-style: none; }
+.container{ max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
