@@ -8,7 +8,14 @@ export default function NavBar() {
   return (
     <nav className="nav">
       {/* Marca que lleva al home */}
-      <Link to="/" className="brand">🛍️ NyanzaruStore</Link>
+      <Link to="/" className="brand flex items-center gap-2">
+  <img 
+    src="./logo.png"
+    alt="NyanzaruStore" 
+    style={{ width: "120px", height: "120px", objectFit: "contain" }} 
+  />
+  <span>NyanzaruStore</span>
+</Link>
 
       {/* Enlaces a cada categoría (dinámicos) */}
       {categories.map((cat) => (
