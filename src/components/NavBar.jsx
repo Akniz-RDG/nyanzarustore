@@ -1,34 +1,26 @@
-import "./NavBar.css"
-import CartWidget from "./CartWidget"
-import logo from "../assets/logo.png";
+import { NavLink, Link } from "react-router-dom";
+import { getCategories } from "../data/products.js";
 
-const NavBar = () => {
-  const categorias = [
-    "Inicio",
-    "Mascotas de Ekene-Afa",
-    "Armas de Kwayothé",
-    "Artículos de Supervivencia de Jessamine",
-    "Artilugios de Wakanga",
-  ]
+export default function NavBar() {
+  // Obtenemos las categorías desde los datos mock (únicas)
+  const categories = getCategories();
 
   return (
-    <nav className="nav-container">
-      {/* Logo desde /public */}
-      <a href="#" className="brand">
-        <img src={logo} alt="Logo Puerto Nyanzaru Shop" className="logo-img" />
-        <span className="brand-name">Puerto Nyanzaru Shop</span>
-      </a>
+    <nav className="nav">
+      {/* Marca que lleva al home */}
+      <Link to="/" className="brand">🛍️ NyanzaruStore</Link>
 
-      <ul className="nav-links" role="list">
-        {categorias.map((txt) => (
-          <li key={txt}><a href="#">{txt}</a></li>
-        ))}
-      </ul>
+      {/* Enlaces a cada categoría (dinámicos) */}
+      {categories.map((cat) => (
+        // NavLink agrega clase "active" si la ruta coincide
+        <NavLink key={cat} to={`/category/${cat}`}>
+          {cat}
+        </NavLink>
+      ))}
 
-      {/* Hijo: CartWidget */}
-      <CartWidget />
+      {/* Espaciador + icono de carrito (futuro: badge con cantidad) */}
+      <div className="spacer" />
+      <Link to="/" aria-label="Cart" title="Carrito">🛒</Link>
     </nav>
-  )
+  );
 }
-
-export default NavBar
