@@ -1,12 +1,20 @@
-import ItemCard from "./ItemCard.jsx";
+import React from 'react'
+import Item from './Item'
 
-export default function ItemList({ items }) {
-  // Renderiza un grid de productos. IMPORTANTEEEE: usar key estable!!!!! (id) <<<<<<====================
+const ItemList = ({data}) => {
+    // console.log(props)
+    // const {data}= props
   return (
-    <div className="grid">
-      {items.map((p) => (
-        <ItemCard key={p.id} item={p} />
-      ))}
+    <div style={{paddingTop:50, display:'flex', justifyContent:'space-around', alignItems:'center', flexWrap:'wrap'}}>
+        {/* {data.map((prod)=> {
+           return <Item key={prod.id} prod={prod}/>
+        })} */}
+        {/* {data.map((prod)=> (
+            <Item key={prod.id} prod={prod}/>
+        ))} */}
+           {data.map((prod)=>  <Item key={prod.id} prod={prod}/>)}
     </div>
-  );
+  )
 }
+
+export default ItemList

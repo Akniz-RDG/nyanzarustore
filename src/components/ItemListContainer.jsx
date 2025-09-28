@@ -1,46 +1,44 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { getProducts } from "../data/products.js";
-import ItemList from "./ItemList.jsx";
+import { useState, useEffect } from "react"
+import { getProducts } from "../mock/AsyncService"
+import ItemList from "./ItemList"
+import { useParams } from "react-router-dom"
+import LoaderComponent from "./LoaderComponent"
 
-export default function ItemListContainer({ greeting }) {
-  // Lee el segmento dinámico de la URL: /category/:categoryId
-  const { categoryId } = useParams();
+const ItemListContainer = ({mensaje})=>{
+    const [data, setData] = useState([])
+    const [loading, setLoading]= useState(false)
+    const {type}=useParams()
+    console.log('categoria: ', type)
+    useEffect(()=>{
+        setLoading(true)
+        getProducts()
+        .then((res)=> {
+            if(type){
+                //filtrar
+                setData(res.filter((prod)=> prod.category === type))
+            }else{
+                //type es undefined y no filtro
+                setData(res)
+            }
+        })
+        .catch((error)=> console.error(error))
+        .finally(()=> setLoading(false))
+        //tiene que estar a la escucha del cambio de categoria
+    },[type])
 
-  // Estado local para datos, carga y error
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);   // indicador de carga
-  const [error, setError] = useState(null);       // mensaje de error si falla
+  
 
-  useEffect(() => {
-    // Cada vez que cambia la categoría en la URL, recargamos
-    setLoading(true);
-    setError(null);
-
-    // Simula un "fetch" con Promises y retardo
-    getProducts(categoryId)
-      .then(setItems)                // si ok → guardar productos
-      .catch((e) => setError(e.message)) // si falla → guardar error
-      .finally(() => setLoading(false));  // en todos los casos → fin de carga
-  }, [categoryId]); // ⚠️ dependencia clave: actualiza al cambiar categoría
-
-  if (loading) return <p>Cargando catálogo…</p>;
-  if (error) return <p>Error: {error}</p>;
-
-  return (
-    <section>
-      {/* Saludo opcional que viene por props */}
-      {greeting && <h2>{greeting}</h2>}
-
-      {/* Mensaje contextual según haya filtro o no */}
-      {categoryId ? (
-        <p className="muted">Filtrando por categoría: <strong>{categoryId}</strong></p>
-      ) : (
-        <p className="muted">Todos los productos</p>
-      )}
-
-      {/* Componente de presentación que lista tarjetas */}
-      <ItemList items={items} />
-    </section>
-  );
+    return(
+       <>
+       {
+        loading 
+        ? <LoaderComponent/>
+        :  <>
+            <h1 className="text-center">{mensaje} {type && <span style={{textTransform:'capitalize'}}>{type}</span>}</h1>
+            <ItemList data={data} />
+        </>
+       }
+       </>
+    )
 }
+export default ItemListContainer

@@ -1,21 +1,12 @@
-Puerto Nyanzaru Shop 🦖
+# React + Vite
 
-Proyecto de React JS (Coderhouse) — Pre-entrega 1
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-📌 Descripción
+Currently, two official plugins are available:
 
-Esta aplicación es el inicio de un ecommerce ficticio ambientado en Puerto Nyanzaru (Chult), utilizando React con Vite.
-El proyecto implementa la primera estructura de componentes solicitada en la cursada.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-⚙️ Requisitos cumplidos
+## Expanding the ESLint configuration
 
-NavBar: contiene el logo de la tienda, el nombre del ecommerce y categorías (ej. bazares de los príncipes mercantes).
-
-CartWidget: hijo de NavBar, muestra el ícono de carrito 🛒 con un número de productos hardcodeado.
-
-ItemListContainer: recibe una prop desde App.jsx y muestra un mensaje de bienvenida en pantalla.
-
-📜 Disclaimer
-
-Puerto Nyanzaru, Chult y los Príncipes Mercantes son propiedad de Wizards of the Coast LLC.
-Este proyecto es un ejercicio educativo no oficial y no está afiliado ni respaldado por Wizards of the Coast.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

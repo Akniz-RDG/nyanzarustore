@@ -1,33 +1,25 @@
-import { NavLink, Link } from "react-router-dom";
-import { getCategories } from "../data/products.js";
+import "../css/NavBar.css"
+import CartWidget from "./CartWidget"
+import CartWidgetIcons from "./CartWidgetIcons"
+import {NavLink} from 'react-router-dom'
+//si tengo la imagen dentro de src la tengo que importar
+//import logoAssets from "../assets/react.svg"
 
-export default function NavBar() {
-  // Obtenemos las categorías desde los datos mock (únicas)
-  const categories = getCategories();
-
-  return (
-    <nav className="nav">
-      {/* Marca que lleva al home */}
-      <Link to="/" className="brand flex items-center gap-2">
-  <img 
-    src="./logo.png"
-    alt="NyanzaruStore" 
-    style={{ width: "120px", height: "120px", objectFit: "contain" }} 
-  />
-  <span>NyanzaruStore</span>
-</Link>
-
-      {/* Enlaces a cada categoría (dinámicos) */}
-      {categories.map((cat) => (
-        // NavLink agrega clase "active" si la ruta coincide
-        <NavLink key={cat} to={`/category/${cat}`}>
-          {cat}
-        </NavLink>
-      ))}
-
-      {/* Espaciador + icono de carrito (futuro: badge con cantidad) */}
-      <div className="spacer" />
-      <Link to="/" aria-label="Cart" title="Carrito">🛒</Link>
-    </nav>
-  );
+const NavBar= ()=>{
+    console.log('Navbar')
+    return(
+        <nav className="nav-container">
+            <NavLink className='anchor-nav' to="/">
+                <img className="logo" alt='logo' src='../logo-shop.png'/>
+                {/* <img className="logo" alt='logo' src={logoAssets}/> */}
+            </NavLink>
+            <NavLink className='anchor-nav' to="/category/nuevos">Nuevos</NavLink>
+            <NavLink className='anchor-nav' to="/category/ofertas">Ofertas</NavLink>
+            <NavLink className='anchor-nav' to="/category/mas vendidos">Más vendidos</NavLink>
+            {/* <CartWidget/> */}
+            <CartWidgetIcons/>
+        </nav>
+    )
 }
+
+export default NavBar
