@@ -5,7 +5,7 @@ const CartView = () => {
     const {cart, clear, removeItem} = useContext(CartContext)
   return (
     <div>
-        <h1>Tu carrito 🛒</h1>
+        <h1>Tu canasta 🛒</h1>
         <div>
             {
                 cart.map((compra)=>(

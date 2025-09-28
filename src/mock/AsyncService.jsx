@@ -6,7 +6,7 @@ const productos =[
         stock:25,
         price:25000,
         img:'https://picsum.photos/200',
-        category:'nuevos'
+        category:'Ekene-Afa'
     },
      {
         id:'02',

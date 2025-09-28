@@ -15,8 +15,8 @@ function App() {
     <CartProvider>
     <NavBarRB/>
     <Routes>
-      <Route path='/' element={<ItemListContainer mensaje="Bienvenidos a CoderShop!"/>}/>
-      <Route path='/category/:type' element={<ItemListContainer mensaje="Estas en la categoria: "/>}/>
+      <Route path='/' element={<ItemListContainer mensaje="Bienvenido al bazar de Puerto Nyanzru"/>}/>
+      <Route path='/category/:type' element={<ItemListContainer mensaje="Estás viendo los productos de: "/>}/>
       <Route path='/item/:id' element={<ItemDetailContainer/>}/>
       <Route path='/cart' element={<CartContainer/>}/>
       <Route path='*' element={<Error/>}/>
