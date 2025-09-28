@@ -12,7 +12,7 @@ function NavBarRB() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand as={NavLink} to='/'>
-          <img src="/img/logo-shop.png" alt='logo' className='logo-shop-p'/>
+          <img src="./img/logo-shop.pns" alt="logo" className="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

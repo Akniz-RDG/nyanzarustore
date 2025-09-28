@@ -1,7 +1,7 @@
 // Productos por Príncipe Mercante de Chult (3 cada uno)
 export const productos = [
   // Ekene-Afa — armas, equipo marcial
-  { id: 'EK-01', name: 'Lanza chultiana', description: 'Lanza equilibrada de cazador de jungla.', stock: 12, price: 5600, img: '/img/lanza-chult.png', category: 'Ekene-Afa' },
+  { id: 'EK-01', name: 'Lanza chultiana', description: 'Lanza equilibrada de cazador de jungla.', stock: 12, price: 5600, img: 'https://preview.redd.it/333tj1n7gkz51.png?width=640&crop=smart&auto=webp&s=e76d319da26521df291f6528ff82578520abff73', category: 'Ekene-Afa' },
   { id: 'EK-02', name: 'Escudo de mimbre reforzado', description: 'Ligero, ideal para humedad y selva.', stock: 9, price: 7800, img: '/img/escudo-mimbre.png', category: 'Ekene-Afa' },
   { id: 'EK-03', name: 'Red de caza trenzada', description: 'Fibra vegetal curada, no se pudre.', stock: 16, price: 3900, img: '/img/red-caza.png', category: 'Ekene-Afa' },
 
@@ -13,7 +13,7 @@ export const productos = [
   // Jessamine — hierbas, tónicos (legales), antídotos
   { id: 'JE-01', name: 'Ungüento de hoja de asabu', description: 'Reduce fiebre y previene infección.', stock: 14, price: 6100, img: '/img/unguento-asabu.png', category: 'Jessamine' },
   { id: 'JE-02', name: 'Tónico respiratorio de manglar', description: 'Despeja vías y alivia tos de selva.', stock: 11, price: 7300, img: '/img/tonico-manglar.png', category: 'Jessamine' },
-  { id: 'JE-03', name: 'Kit básico de antídotos', description: 'Viales contra mordeduras comunes.', stock: 7, price: 15800, img: '/img/kit-antidotos.png', category: 'Jessamine' },
+  { id: 'JE-03', name: 'Kit básico de antídotos', description: 'Viales contra mordeduras comunes.', stock: 7, price: 15800, img: 'https://siemens-mobile.com/wp-content/uploads/2023/08/image-93.png', category: 'Jessamine' },
 
   // Jobal — licencias, mapas, contratación de guías
   { id: 'JO-01', name: 'Permiso de expedición (7 días)', description: 'Autorización oficial para internarse en la jungla.', stock: 50, price: 4200, img: '/img/permiso-expedicion.png', category: 'Jobal' },
