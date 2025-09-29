@@ -7,12 +7,12 @@ export const productos = [
 
   // Ifan Talro’a — bestias, monturas, forrajes
   { id: 'IF-01', name: 'Sillín para dinosaurio ligero', description: 'Ajuste para raptor o deinonychus.', stock: 5, price: 24500, img: 'https://dontstarve.wiki.gg/images/Saddle_Dropped.png?44fd75', category: 'Ifan Talro’a' },
-  { id: 'IF-02', name: 'Forraje tropical (saco 25kg)', description: 'Mezcla nutritiva para monturas.', stock: 20, price: 5200, img: '/img/forraje-tropical.png', category: 'Ifan Talro’a' },
-  { id: 'IF-03', name: 'Arnés de cuero impermeable', description: 'Tratado con aceites de palma.', stock: 8, price: 9900, img: '/img/arnes-cuero.png', category: 'Ifan Talro’a' },
+  { id: 'IF-02', name: 'Forraje tropical (saco 25kg)', description: 'Mezcla nutritiva para monturas.', stock: 20, price: 5200, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Ifan Talro’a' },
+  { id: 'IF-03', name: 'Arnés de cuero impermeable', description: 'Tratado con aceites de palma.', stock: 8, price: 9900, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Ifan Talro’a' },
 
   // Jessamine — hierbas, tónicos (legales), antídotos
-  { id: 'JE-01', name: 'Ungüento de hoja de asabu', description: 'Reduce fiebre y previene infección.', stock: 14, price: 6100, img: '/img/unguento-asabu.png', category: 'Jessamine' },
-  { id: 'JE-02', name: 'Tónico respiratorio de manglar', description: 'Despeja vías y alivia tos de selva.', stock: 11, price: 7300, img: '/img/tonico-manglar.png', category: 'Jessamine' },
+  { id: 'JE-01', name: 'Ungüento de hoja de asabu', description: 'Reduce fiebre y previene infección.', stock: 14, price: 6100, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Jessamine' },
+  { id: 'JE-02', name: 'Tónico respiratorio de manglar', description: 'Despeja vías y alivia tos de selva.', stock: 11, price: 7300, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Jessamine' },
   { id: 'JE-03', name: 'Kit básico de antídotos', description: 'Viales contra mordeduras comunes.', stock: 7, price: 15800, img: 'https://siemens-mobile.com/wp-content/uploads/2023/08/image-93.png', category: 'Jessamine' },
 
   // Jobal — licencias, mapas, contratación de guías
@@ -21,19 +21,19 @@ export const productos = [
   { id: 'JO-03', name: 'Contrato de guía local', description: 'Guía acreditado, tarifa por día.', stock: 10, price: 18500, img: 'https://5e.tools/img/bestiary/tokens/ToA/Qawasha.webp', category: 'Jobal' },
 
   // Kwayothé — fuego, especias, vinos de fruta (lujo)
-  { id: 'KW-01', name: 'Brasero de barro volcánico', description: 'Encendido rápido, humo bajo.', stock: 6, price: 12500, img: '/img/brasero-volcanico.png', category: 'Kwayothé' },
-  { id: 'KW-02', name: 'Especias rojas de Mezro (mix)', description: 'Mezcla picante ritual y culinaria.', stock: 22, price: 4800, img: '/img/especias-rojas.png', category: 'Kwayothé' },
+  { id: 'KW-01', name: 'Brasero de barro volcánico', description: 'Encendido rápido, humo bajo.', stock: 6, price: 12500, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Kwayothé' },
+  { id: 'KW-02', name: 'Especias rojas de Mezro (mix)', description: 'Mezcla picante ritual y culinaria.', stock: 22, price: 4800, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Kwayothé' },
   { id: 'KW-03', name: 'Vino de palma añejo', description: 'Dulce, cálido; bot. 750ml.', stock: 9, price: 9900, img: 'https://static.wikia.nocookie.net/forgottenrealms/images/3/3d/Wines_bg3.png/revision/latest/scale-to-width-down/335?cb=20231129022045', category: 'Kwayothé' },
 
   // Wakanga O’tamu — magia, pergaminos, arcanos
-  { id: 'WA-01', name: 'Pergamino: Luz Continúa', description: 'Hechizo de iluminación duradera.', stock: 5, price: 14200, img: '/img/pergamino-luz.png', category: 'Wakanga O’tamu' },
-  { id: 'WA-02', name: 'Amuleto contra fiebres', description: 'Talismán con sello arcano menor.', stock: 8, price: 17300, img: '/img/amuleto-fiebres.png', category: 'Wakanga O’tamu' },
-  { id: 'WA-03', name: 'Polvo desecante para libros', description: 'Protege grimorios de humedad.', stock: 12, price: 5200, img: '/img/polvo-desecante.png', category: 'Wakanga O’tamu' },
+  { id: 'WA-01', name: 'Pergamino: Luz Continúa', description: 'Hechizo de iluminación duradera.', stock: 5, price: 14200, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Wakanga O’tamu' },
+  { id: 'WA-02', name: 'Amuleto contra fiebres', description: 'Talismán con sello arcano menor.', stock: 8, price: 17300, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Wakanga O’tamu' },
+  { id: 'WA-03', name: 'Polvo desecante para libros', description: 'Protege grimorios de humedad.', stock: 12, price: 5200, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Wakanga O’tamu' },
 
   // Zhanthi — gemas, telas finas, comercio respetable
   { id: 'ZH-01', name: 'Turbante de lino de Nyanzaru', description: 'Tejido fresco, teñido natural.', stock: 15, price: 7800, img: 'https://static.wikia.nocookie.net/forgottenrealms/images/5/56/Merchant_Prince_Ifan_Talro%27a.jpg/revision/latest?cb=20180204121325', category: 'Zhanthi' },
-  { id: 'ZH-02', name: 'Set de cuentas de jade', description: 'Adorno tradicional, calidad media.', stock: 10, price: 13200, img: '/img/cuentas-jade.png', category: 'Zhanthi' },
-  { id: 'ZH-03', name: 'Pañolón de seda teñida', description: 'Seda chultiana, patrón de hojas.', stock: 7, price: 18900, img: '/img/panolon-seda.png', category: 'Zhanthi' },
+  { id: 'ZH-02', name: 'Set de cuentas de jade', description: 'Adorno tradicional, calidad media.', stock: 10, price: 13200, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Zhanthi' },
+  { id: 'ZH-03', name: 'Pañolón de seda teñida', description: 'Seda chultiana, patrón de hojas.', stock: 7, price: 18900, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Zhanthi' },
 ];
 
 // Helper opcional: categorías únicas
