@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <nav className="nav-container">
       <NavLink className="anchor-nav" to="/">
-        <img className="logo" alt="logo" src="/img/logo-shop.png" />
+        <img src="/img/logo-shop.png" alt="logo" className="logo" />
       </NavLink>
 
       {/* Príncipes Mercantes como categorías */}
