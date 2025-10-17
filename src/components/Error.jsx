@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Error = () => {
   return (
     <div>
-        <h1> Un ladrón se llevó lo que buscabas 😱</h1>
-        <Link className='btn btn-dark' to='/'>Volver al Bazar</Link>
+        <h1> La ruta no existe 😱</h1>
+        <Link className='btn btn-dark' to='/'>Volver a Home</Link>
     </div>
   )
 }

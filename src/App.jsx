@@ -8,6 +8,8 @@ import Error from './components/Error';
 //importar al proveedor para dar acceso al contexto
 import { CartProvider } from './context/CartContext';
 import CartContainer from './components/CartContainer';
+// import Checkout from './components/Checkout'
+import CheckoutRHF from './components/CheckoutRHF';
 function App() {
 
   return (
@@ -15,10 +17,11 @@ function App() {
     <CartProvider>
     <NavBarRB/>
     <Routes>
-      <Route path='/' element={<ItemListContainer mensaje="Bienvenido al bazar de Puerto Nyanzru"/>}/>
-      <Route path='/category/:type' element={<ItemListContainer mensaje="Estás viendo los productos de: "/>}/>
+      <Route path='/' element={<ItemListContainer mensaje="Bienvenidos a CoderShop!"/>}/>
+      <Route path='/category/:type' element={<ItemListContainer mensaje="Estas en la categoria: "/>}/>
       <Route path='/item/:id' element={<ItemDetailContainer/>}/>
       <Route path='/cart' element={<CartContainer/>}/>
+      <Route path='/checkout' element={<CheckoutRHF/>}/>
       <Route path='*' element={<Error/>}/>
     </Routes>
     </CartProvider>

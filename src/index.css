@@ -4,10 +4,3 @@
   padding:0;
   box-sizing: border-box;
 }
-
-body {
-  background: url("/img/market-bg.jpeg") no-repeat center center fixed;
-  background-size: cover;
-  margin: 0;
-  color: #f8f8f8; /* opcional: asegura contraste */
-}
