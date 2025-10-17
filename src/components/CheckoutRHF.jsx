@@ -47,7 +47,7 @@ const CheckoutRHF = () => {
    {
     orderId 
     ?<div>
-        <h2>Realizate tu compra correctamente! 🥳🙌</h2>
+        <h2>¡Lograste concretar la compra!</h2>
         <h3>El id de la compra: {orderId}</h3>
     </div>
     : <div>

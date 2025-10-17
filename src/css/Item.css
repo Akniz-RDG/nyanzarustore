@@ -1,0 +1,57 @@
+.product-card{
+  width: 19rem; background:var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow:hidden; transition: transform .18s, box-shadow .18s;
+  border: 1px solid rgba(27,35,29,.06);
+}
+.product-card:hover{ transform: translateY(-6px); }
+
+.product-card .card-img-top{
+  height: 220px; object-fit: contain;
+  background:
+    repeating-linear-gradient(45deg, #e8efe8 0 10px, #e0e9e1 10px 20px);
+  border-bottom: 3px solid #dfe6e1;
+}
+
+/* Faja decorativa superior */
+.product-card::before{
+  content:"";
+  display:block; height:8px;
+  background:
+    repeating-linear-gradient(90deg,
+      var(--moss) 0 16px, transparent 16px 20px),
+    linear-gradient(90deg,var(--gold),var(--clay));
+}
+
+/* Tipos y botones */
+.product-card .card-title{ font-weight:800; letter-spacing:.2px; }
+.product-card .card-text{ color:var(--jungle); font-weight:700; }
+
+.product-card .btn-dark{
+  background: var(--jungle);
+  border: none; font-weight:700; letter-spacing:.2px;
+}
+.product-card .btn-dark:hover{ background: var(--jungle-700); }
+
+/* Fondo de la sección de productos */
+.product-section {
+  position: relative;
+  padding: 60px 0;
+  background: linear-gradient(
+      rgba(245, 247, 244, 0.9),
+      rgba(245, 247, 244, 0.9)
+    ),
+    url("./market-bg.jpeg") center/cover no-repeat; /* tu imagen */
+  background-attachment: fixed; /* efecto sutil de paralaje */
+}
+
+/* Contenedor interno de las cards */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+  z-index: 2; /* asegura que las cards estén sobre la imagen */
+}

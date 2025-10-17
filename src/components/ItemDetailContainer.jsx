@@ -36,7 +36,7 @@ const ItemDetailContainer = () => {
 
       <div>
            <h1>El producto no existe! 😭</h1>
-          <Link to='/' className='btn btn-dark'> Ir a home</Link>
+          <Link to='/' className='btn btn-dark'>Volver al Bazar</Link>
         </div>
       )
     }

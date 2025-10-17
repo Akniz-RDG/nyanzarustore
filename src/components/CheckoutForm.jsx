@@ -29,7 +29,7 @@ export default function CheckoutForm() {
     <div>
       <h2>¡Gracias por tu compra!</h2>
       <p>Tu ID de orden es: <code>{orderId}</code></p>
-      <Link to="/">Volver al inicio</Link>
+      <Link to="/">Volver al bazar</Link>
     </div>
   );
 
