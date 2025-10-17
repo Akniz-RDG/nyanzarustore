@@ -37,12 +37,12 @@
 /* Fondo de la sección de productos */
 .product-section {
   position: relative;
-  padding: 60px 0;
+  padding: 160px 0;
   background: linear-gradient(
-      rgba(245, 247, 244, 0.9),
-      rgba(245, 247, 244, 0.9)
+      rgba(201, 191, 191, 0.9),
+      rgba(88, 85, 85, 0.9)
     ),
-    url("./market-bg.jpeg") center/cover no-repeat; /* tu imagen */
+    url("../market-bg.jpeg") center/cover no-repeat; /* tu imagen */
   background-attachment: fixed; /* efecto sutil de paralaje */
 }
 
