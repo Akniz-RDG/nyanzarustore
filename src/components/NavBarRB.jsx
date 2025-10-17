@@ -19,7 +19,7 @@ function NavBarRB() {
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to="/category/nuevos">Nuevos</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/category/Ekene-Afa">Ekene-Afa</NavDropdown.Item>
               <NavDropdown.Divider />
 
               <NavDropdown.Item as={NavLink} to="/category/ofertas">

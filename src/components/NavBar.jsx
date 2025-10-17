@@ -13,7 +13,7 @@ const NavBar= ()=>{
                 <img className="logo" alt='logo' src='../logo-shop.png'/>
                 {/* <img className="logo" alt='logo' src={logoAssets}/> */}
             </NavLink>
-            <NavLink className='anchor-nav' to="/category/nuevos">Nuevos</NavLink>
+            <NavLink className='anchor-nav' to="/category/Ekene-Afa">Ekene-Afa</NavLink>
             <NavLink className='anchor-nav' to="/category/ofertas">Ofertas</NavLink>
             <NavLink className='anchor-nav' to="/category/mas vendidos">Más vendidos</NavLink>
             {/* <CartWidget/> */}

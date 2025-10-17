@@ -1,53 +1,40 @@
-export const productos =[
-     {
-        name:'Random 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum at, assumenda enim quae nulla.',
-        stock:15,
-        price:35000,
-        img:'../img/boba-fett.png',
-        category:'ofertas'
-    },
-     {
-        name:'Random 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum at, assumenda enim quae nulla.',
-        stock:10,
-        price:35000,
-        img:'https://i.postimg.cc/KvXRQBn2/darth-vader.png',
-        category:'ofertas'
-    },
-     {
-        name:'Random 4',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum at, assumenda enim quae nulla.',
-        stock:15,
-        price:55000,
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEgjGu7SUxB4Ggx9sAYNoW5X4xQnO1E-WOA&s',
-        category:'mas vendidos'
-    },
-]
+// Productos por Príncipe Mercante de Chult (3 cada uno)
+export const productos = [
+  // Ekene-Afa — armas, equipo marcial
+  { id: 'EK-01', name: 'Lanza chultana', description: 'Lanza equilibrada de cazador de jungla.', stock: 12, price: 5600, img: 'https://preview.redd.it/333tj1n7gkz51.png?width=640&crop=smart&auto=webp&s=e76d319da26521df291f6528ff82578520abff73', category: 'Ekene-Afa' },
 
-let error = false
-export const getProducts = () => {
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            if(error){
-                reject('Hubo un error, intente mas tarde')
-            }else{
-                resolve(productos)
-            }
-        }, 2000)
-    })
-}
+  // Ifan Talro’a — bestias, monturas, forrajes
+  { id: 'IF-01', name: 'Sillín para dinosaurio ligero', description: 'Ajuste para raptor o deinonychus.', stock: 5, price: 24500, img: 'https://dontstarve.wiki.gg/images/Saddle_Dropped.png?44fd75', category: 'Ifan Talro’a' },
 
-export const getOneProduct = (id)=>{
-    return new Promise ((resolve)=>{
-        setTimeout(()=>{
-            let prod = productos.find((prod)=> prod.id === id)
-            resolve(prod)
-        },2000)
-    })
-}
+  // Jessamine — hierbas, tónicos (legales), antídotos
+  { id: 'JE-01', name: 'Ungüento de hoja de asabu', description: 'Reduce fiebre y previene infección.', stock: 14, price: 6100, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Jessamine' },
 
+  // Jobal — licencias, mapas, contratación de guías
+  { id: 'JO-01', name: 'Permiso de expedición (7 días)', description: 'Autorización oficial para internarse en la jungla.', stock: 50, price: 4200, img: 'data:image/jpeg;base64,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', category: 'Jobal' },
+  
 
+  // Kwayothé — fuego, especias, vinos de fruta (lujo)
+  { id: 'KW-01', name: 'Brasero de barro volcánico', description: 'Encendido rápido, humo bajo.', stock: 6, price: 12500, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Kwayothé' },
 
+  // Wakanga O’tamu — magia, pergaminos, arcanos
+  { id: 'WA-01', name: 'Pergamino: Luz Continúa', description: 'Hechizo de iluminación duradera.', stock: 5, price: 14200, img: 'https://st.depositphotos.com/1842549/4754/i/450/depositphotos_47541663-stock-photo-pending-icon.jpg', category: 'Wakanga O’tamu' },
 
+  // Zhanthi — gemas, telas finas, comercio respetable
+  { id: 'ZH-01', name: 'Turbante de lino de Nyanzaru', description: 'Tejido fresco, teñido natural.', stock: 15, price: 7800, img: 'https://static.wikia.nocookie.net/forgottenrealms/images/5/56/Merchant_Prince_Ifan_Talro%27a.jpg/revision/latest?cb=20180204121325', category: 'Zhanthi' },
+];
 
+// Helper opcional: categorías únicas
+export const getCategories = () => [...new Set(productos.map(p => p.category))];
+
+// Mock asíncrono (pre-entrega 2)
+let error = false;
+
+export const getProducts = () =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => (error ? reject('Hubo un error, intente más tarde') : resolve(productos)), 800);
+  });
+
+export const getOneProduct = (id) =>
+  new Promise((resolve) => {
+    setTimeout(() => resolve(productos.find((p) => p.id === id) || null), 600);
+  });

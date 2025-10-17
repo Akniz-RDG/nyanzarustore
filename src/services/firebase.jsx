@@ -1,3 +1,5 @@
+// src/services/firebase.js
+
 // Importa las funciones necesarias del SDK
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
@@ -15,5 +17,5 @@ const firebaseConfig = {
 // Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 
-// Exporta la instancia de Firestore para usar en otros módulos
+// Exporta la base de datos para usarla en otros archivos
 export const db = getFirestore(app);
